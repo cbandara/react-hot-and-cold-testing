@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: tKt1bTJ2AxvR0Kfht6HxjOIkkavQCyGDYBy/cK1xjEUpO1tI2RZMsfXBmbz1U2jMmfTUsTIgKYthWmlKW0pgjeVxaOH92MbSwXxc+g1ToE9BMp37hLtWoz0FOWioLAYODEaMqmS4YZAr+uLunyaLnZ7q+lSjJpLX4Df2YV/J2o1yuR9jDnCLDNQKiickqzgRHJFVdIuhoU7uS44bYrj7+ziqS3VNdMgrDvmKLt+YhYHwWHymY8JHkz2EyaU1QO5ama2dRzljPE1usOy7vagJnBwXVvJmrKquPuKK3w8qYcjd682/lJU1AmuGbPtZI/9DByu8Y8H9ajFIwskkIokWLvGh2sYFDkCtGr3y6zphioIf9PMNkRIT0ck8RSO8X9zfbPOyQqNm9ajSXz7LHcuN5xlOCR7AyBrEuzh3z2JKG/5Brw/NJXmlLcutUxQWmJbM3KVXufBOWTXemhClr+pMteNyCYRUUe901eMyhRjyw7USteOoRFDyoyuWzoTAhSVhii3NhkF0chWVQMezSNrFtkFe2sfB82epmaF9b3sX8MYxhvgvuLp787f4H6BymiYyMqJDpBdPmKnCBfU9IAU3YCafXPrF4zzlYqAI3AijlJlRRT/z6U6aKnWhxfIL8O1XO2xdFDJFCyaTLS/EXZF3YIA7LMKDVJZ3vO6tiRSw7io=
+  app: guarded-refuge-84830
+  on:
+    repo: cbandara/react-hot-and-cold-testing
